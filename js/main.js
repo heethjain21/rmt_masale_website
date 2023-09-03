@@ -73,11 +73,13 @@
 	};
 	carousel();
 
+	$('.copyright_text').text("Copyright © " + new Date().getFullYear() + " RMT Masale");
+
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
 		// clearTimeout(timer);
-		$this.addClass('show');
+		$this.addClass('show');	
 		$this.find('> a').attr('aria-expanded', true);
 		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
 		$this.find('.dropdown-menu').addClass('show');
